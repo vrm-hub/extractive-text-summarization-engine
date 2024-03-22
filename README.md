@@ -34,14 +34,14 @@ The 3 models are -
 - Define a function `process_stories` that takes a directory containing story files as input.
 - Load previously processed data from the `processed_data_dir` and skip those files.
 - For each story file in the specified directory, do the following:
-- Check if the story has already been processed; if yes, skip to the next one.
-- Preprocess the story by tokenizing and converting it to extractive format.
-- Tokenize and filter sentences based on length.
-- Calculate BERT embeddings for the tokenized chunks of the story.
-- Summarize the article using the `summarize_article` function.
-- Save the processed data (story text, tokenized sentences, generated summary, reference summary) to a
-  pickle file.
-- Append the generated and reference summaries to lists for later evaluation.
+  - Check if the story has already been processed; if yes, skip to the next one.
+  - Preprocess the story by tokenizing and converting it to extractive format.
+  - Tokenize and filter sentences based on length.
+  - Calculate BERT embeddings for the tokenized chunks of the story.
+  - Summarize the article using the `summarize_article` function.
+  - Save the processed data (story text, tokenized sentences, generated summary, reference summary) to a
+    pickle file.
+  - Append the generated and reference summaries to lists for later evaluation.
 3. Bert Embeddings (bert_embeddings.py):
 - Define a function `get_sentence_embeddings` that generates sentence embeddings using a pre-trained
   BERT model.
