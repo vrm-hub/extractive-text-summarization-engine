@@ -142,10 +142,10 @@ The 3 models are -
 - Prints the story, reference summary, and LDA summary for each file.
 - Finally, calculates and prints the average BLEU, ROUGE, and METEOR scores over all processed files.
 ## CHALLENGES:
-● Transition Challenges: The initial exploration with Seq2Seq LSTM models for abstractive
+1. Transition Challenges: The initial exploration with Seq2Seq LSTM models for abstractive
 summarization revealed a misalignment with the goal of extractive summarization. This prompted a shift
 towards alternative methods, including the investigation of KL Divergence.
-● Resource Constraints and Data Processing Bottleneck: Computational resources presented challenges
+2. Resource Constraints and Data Processing Bottleneck: Computational resources presented challenges
 during both data processing and model training. Data preprocessing, taking 8-9 hours for a 10,000-
 document dataset on a 64GB RAM machine, limited the ability to scale up to larger datasets. Training
 the model was time-intensive, with each epoch requiring 2-3 hours, hindering rapid experimentation and
